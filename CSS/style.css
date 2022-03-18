@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2? famille=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+
+:root{
+    --black: #000;
+    --white:#fff;
+    --lightwhiter: rgba(255, 255, 255, 0.85);
+    --lightgray: #cbc;
+    --gray: rgb(128, 128, 128);
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px; /* Taille standard de police*/
+    margin: 0; /* On rmet les marge a 0*/
+    height: 100vh; /* permet de donner une taille de body*/
+}
+
+
+body main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* permet de donner la taille de "main" à 100% du body*/
+    gap: 10px;
+}
+
+main section{
+    width: 50%;
+   
+}
+
+main section:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+}
+
+body main form h1{
+    font-size: 3rem;
+}
+
+body main form p{
+    color: var(--lightgray);
+    font-weight: 500;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+
+body main form input{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+body main form label{
+    display: block;
+    size: 3rem;
+    font-weight: bold;
+}
+
+body main form button{
+    background-color: var(--black);
+    font-weight: bold;
+    color: var(--white);
+    width: 90%;
+    height: 15%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body main form a{
+    border: 1px solid var(--lightgray);
+    padding: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    width: 90%;
+    gap: 10px;
+    
+}
+
+body main form img{
+    width: 7%;
+}
+
+body section:nth-child(2){
+    background: url(../images/women_book.jpg) center no-repeat;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    
+}
+
+body section:nth-child(2) div{
+
+    background-color: var(--lightwhiter);
+    width: 65%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 20;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}    
+
+body section h2 {
+    padding: 20px 20px;
+}
+
+body section:nth-child(2) p{
+    padding: 20px 20px;
+    
+}
